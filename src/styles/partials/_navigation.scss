@@ -6,11 +6,11 @@
 nav {
   top: 0;
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
   z-index: 1000;
   position: fixed;
-  height: 78px;
+  // height: 78px;
   background: white;
   transition: 0.5s;
 
@@ -26,7 +26,7 @@ nav {
 
     .logo {
       img {
-        width: 50px;
+        width: 60px;
       }
     }
   }
