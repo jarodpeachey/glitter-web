@@ -150,9 +150,20 @@
 
       &:nth-of-type(1) {
         .col-md-6 {
+          margin-bottom: -200px;
+
+          @include media-breakpoint-up(md) {
+            margin-bottom: -80px;
+          }
+
+          @include media-breakpoint-up(lg) {
+            margin-bottom: -200px;
+          }
+
           figure {
             box-shadow: $shadow--three;
             width: 76%;
+            margin-left: 0;
 
             &:nth-of-type(2) {
               position: relative;
@@ -160,6 +171,16 @@
               width: 90%;
               top: -200px;
               box-shadow: $shadow--four;
+
+              @include media-breakpoint-up(md) {
+                width: 95%;
+                top: -80px;
+              }
+
+              @include media-breakpoint-up(lg) {
+                width: 90%;
+                top: -200px;
+              }
             }
           }
 
@@ -171,10 +192,20 @@
             content: "";
             background-image: url("/media/img/icons/icon--arrow.svg");
             top: 40%;
-            transform: scaleX(-1) rotate(48deg) scale(.8);
-            left: 29%;
-            filter: invert(.6) hue-rotate(200deg);
+            transform: scaleX(-1) rotate(48deg) scale(0.8);
+            left: 20%;
+            filter: invert(0.6) hue-rotate(200deg);
             // transform: rotate(20deg);
+
+            @include media-breakpoint-up(md) {
+              top: 30%;
+              left: 14%;
+            }
+
+            @include media-breakpoint-up(lg) {
+              top: 40%;
+              left: 20%;
+            }
           }
         }
       }
@@ -188,6 +219,13 @@
           margin-bottom: 420px;
           margin-left: -20px;
           width: 80%;
+
+          @include media-breakpoint-up(md) {
+            margin-bottom: 340px;
+          }
+          @include media-breakpoint-up(xl) {
+            margin-bottom: 420px;
+          }
         }
 
         @include media-breakpoint-up(md) {
