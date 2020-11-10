@@ -52,13 +52,29 @@
       }
     }
 
-    .image__wrapper:hover .image__inner {
-      transform: rotateY(-14deg) rotateX(0deg);
+    .image__wrapper:hover {
+      .image__inner {
+        transform: rotateY(-22deg) rotateX(0deg);
+      }
+
+      figure {
+        &:nth-of-type(2) {
+          top: -28px;
+          left: 52%;
+          z-index: 1;
+          width: 54%;
+          height: 54%;
+
+          svg {
+            box-shadow: $shadow--four;
+          }
+        }
+      }
     }
 
     .image__inner {
       transition: 0.3s;
-      transform: rotateY(-24deg);
+      transform: rotateY(-18deg);
       position: relative;
     }
 
@@ -69,6 +85,7 @@
       left: 0;
       height: 100%;
       z-index: 0;
+      transition: 0.2s;
 
       image {
         position: relative;
@@ -77,6 +94,7 @@
 
       svg {
         box-shadow: $shadow--three;
+        transition: 0.2s;
       }
 
       &:nth-of-type(2) {
@@ -86,7 +104,7 @@
         width: 50%;
         height: 50%;
         svg {
-          box-shadow: $shadow--four, $shadow--two;
+          box-shadow: $shadow--three;
         }
       }
     }
@@ -102,6 +120,22 @@
 
     .feature {
       padding: 4rem 0;
+      &:nth-of-type(1),
+      &:nth-of-type(3) {
+        flex-direction: column-reverse;
+
+        .feature__image {
+          margin-bottom: 32px;
+        }
+
+        @include media-breakpoint-up(md) {
+          flex-direction: row;
+
+          .feature__image {
+            margin-bottom: 0;
+          }
+        }
+      }
 
       .feature__image {
         width: 100%;
@@ -110,29 +144,115 @@
         box-shadow: 20px 20px 0px 0px #{$color--orange}20;
       }
 
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 16px;
-        grid-row-gap: 16px;
+      &:nth-of-type(3) .feature__image {
+        box-shadow: 20px 20px 0px 0px #{$color--pink}20;
       }
 
-      .image-one {
-        grid-area: 1 / 1 / 2 / 2;
-        box-shadow: 20px 20px 0px 0px #{$color--orange}50 !important;
+      .image__wrapper {
+        perspective: 1000px;
+        margin: 4em auto;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 420px;
+        margin-left: -20px;
+        width: 80%;
       }
-      .image-two {
-        grid-area: 1 / 2 / 2 / 3;
-        box-shadow: 20px 20px 0px 0px #{$color--pink}50 !important;
+
+      @include media-breakpoint-up(md) {
+        .image__wrapper:hover {
+          .image__inner {
+            transform: rotateY(5deg);
+            width: 100%;
+
+            figure {
+              position: absolute;
+              top: 0;
+              left: 0;
+              // width: 50%;
+
+              &:nth-of-type(2) {
+                top: 34px;
+                left: 34px;
+                width: 103%;
+              }
+              &:nth-of-type(3) {
+                top: 70px;
+                left: 70px;
+                width: 107%;
+              }
+              &:nth-of-type(4) {
+                top: 110px;
+                left: 110px;
+                width: 110%;
+
+                svg {
+                  box-shadow: $shadow--four;
+                }
+              }
+            }
+          }
+        }
       }
-      .image-three {
-        grid-area: 2 / 1 / 3 / 2;
-        box-shadow: 20px 20px 0px 0px #{$color--purple}50 !important;
+
+      .image__inner {
+        transition: 0.3s;
+        transform: rotateY(14deg);
+        position: relative;
+        top: -64px;
       }
-      .image-four {
-        grid-area: 2 / 2 / 3 / 3;
-        box-shadow: 20px 20px 0px 0px #{$color--orange}50 !important;
+
+      .image__inner figure {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        height: 50%;
+        z-index: 0;
+        transition: 0.2s;
+
+        // @include media-breakpoint-up(md) {
+        //   width: 50%;
+        // }
+
+        image {
+          position: relative;
+          top: 50px;
+        }
+
+        svg {
+          box-shadow: $shadow--three;
+          transition: 0.2s;
+        }
+
+        &:nth-of-type(2) {
+          top: 30px;
+          left: 30px;
+          z-index: 1;
+          height: 50%;
+          svg {
+            box-shadow: $shadow--three;
+          }
+        }
+
+        &:nth-of-type(3) {
+          top: 60px;
+          left: 60px;
+          z-index: 2;
+          height: 50%;
+          svg {
+            box-shadow: $shadow--three;
+          }
+        }
+
+        &:nth-of-type(4) {
+          top: 90px;
+          left: 90px;
+          z-index: 3;
+          height: 50%;
+          svg {
+            box-shadow: $shadow--three;
+          }
+        }
       }
 
       .icon {

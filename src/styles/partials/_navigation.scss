@@ -12,10 +12,12 @@ nav {
   position: fixed;
   // height: 78px;
   background: white;
-  transition: 0.5s;
+  transition: 0.2s;
 
   &.scroll {
     box-shadow: $shadow--one;
+    padding-top: 0em;
+    padding-bottom: 0em;
   }
 
   .container {
