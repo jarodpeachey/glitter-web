@@ -13,29 +13,32 @@
   text-transform: uppercase;
   display: block;
   text-decoration: none;
-  font-family: "Nunito Sans", "Raleway";
   transition: 0.2s;
   text-align: center;
   letter-spacing: 1.1px;
   width: fit-content;
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 1rem;
+  font-family: "Rubik", "Raleway";
+  font-weight: 600;
+  letter-spacing: 1px;
 
-  background-image: linear-gradient(to bottom right, $color--primary-dark, $color--tertiary, $color--secondary);
+  background-image: linear-gradient(to bottom right, $color--purple-dark, $color--pink, $color--orange);
   background-repeat: repeat-x;
   background-repeat: repeat-y;
   background-size: 100% 90px;
   background-position: 0 -30px;
 
   &:hover {
-    // background: linear-gradient(to bottom left, $color--primary-dark, $color--tertiary-dark, $color--secondary-dark);
+    // background: linear-gradient(to bottom left, $color--purple-dark, $color--pink-dark, $color--orange-dark);
     background-position: 0 0;
+    box-shadow: $shadow--one;
   }
 
   &.outlined {
     background: transparent;
-    color: $color--primary;
-    border: 1px solid $color--primary;
+    color: $color--purple-dark;
+    border: 1px solid $color--purple-dark;
     padding: 16px 24px 13px;
   }
 

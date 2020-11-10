@@ -46,6 +46,8 @@
   font-display: swap;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap");
+
 html,
 body,
 div,
@@ -69,17 +71,18 @@ h4,
 h5,
 h6 {
   color: $color--heading;
-  font-weight: 700;
-  font-family: "Nunito Sans", "Raleway";
+  font-weight: 600;
+  font-family: "Rubik", "Raleway";
   margin-bottom: 1.125rem;
 
   &.display {
-    font-weight: 900;
+    font-weight: 800;
   }
 }
 
 h1 {
   font-size: 46px;
+  line-height: 68px;
 
   &.display {
     font-size: 60px;

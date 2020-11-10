@@ -15,51 +15,24 @@ const Home = () => {
 
       <section className="hero">
         <div className="container">
-          <h1 className="section-heading display">Gatsby Starter Plus</h1>
+          <h1 className="section-heading display">Make Twitter Yours</h1>
           <p className="section-description">
-            A modern starter kit for Gatsby to give you a Gatsby site that scores 100s for performance, SEO and accessibility, right out of the box.
+            Glitter is the first Twitter extension that gives you total control over how Twitter looks. Customize everything from the background colors to buttons, box-shadows to inputs, and more.
           </p>
-          <p className="section-description">Perfect for bootstrapping a SaaS, blog or personal website.</p>
           <a href="/" className="btn">
-            Download
+            Get it now
           </a>
           <a href="/" className="btn outlined">
-            Source Code
+            How it works
           </a>
         </div>
       </section>
       <section className="features">
         <div className="container">
-          <h2 className="section-heading">Totally awesome. No configuration needed.</h2>
+          <h2 className="section-heading">Some video headline</h2>
           <p className="section-description">
-            Gatsby Starter Plus gives you support for SCSS, accessiblity, performance and SEO without any extra packages or plugins.
+            Some description for the video
           </p>
-          <Row spacing={[24]} breakpoints={[576, 769]}>
-            <Column widths={[6, 4]}>
-              <div className="feature">
-                <img src="/media/img/icons/icon--100.png" alt="Speed icon" />
-                <h3>Speed</h3>
-                <p> Gatsby Starter Plus is built for speed; it removes any unneeded JS to make sure you get a 100 on Google PageSpeed.</p>
-              </div>
-            </Column>
-            <Column widths={[6, 4]}>
-              <div className="feature">
-                <img src="/media/img/icons/icon--search.png" alt="Search icon" />
-                <h3>SEO</h3>
-                <p>
-                  Gatsby Starter Plus is built for SEO; simply add an SEO image to each page and Gatsby Starter Plus will set up social cards, meta tags and
-                  more.
-                </p>
-              </div>
-            </Column>
-            <Column widths={[6, 4]}>
-              <div className="feature">
-                <img src="/media/img/icons/icon--users.png" alt="Accessibility icon" />
-                <h3>Accessibility</h3>
-                <p> Gatsby Starter Plus is built for accessibility. The starter comes out-of-the-box passing all accessibility tests for your users.</p>
-              </div>
-            </Column>
-          </Row>
         </div>
       </section>
     </>
