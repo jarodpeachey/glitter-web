@@ -21,14 +21,15 @@ const Home = ({ props }) => {
                 <span>Customize Twitter</span> With Just A Few Clicks
               </h1>
               <p className="section-description">
-                Glitter is the first Twitter extension that gives you total control over how Twitter looks. Customize everything from the background colors to
+                Glitter is a Chrome extension that lets you customize everything from the background colors to
                 buttons, box-shadows to inputs, and more.
               </p>
+              <p>Choose from 15+ presets, or create your own theme. The possibilities are endless.</p>
               <a href="/" className="btn">
                 Get it now
               </a>
               <a href="/" className="btn outlined">
-                How it works
+                View templates
               </a>
             </div>
             <div className="col-lg-6">
