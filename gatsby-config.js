@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Plus`,
-    description: `Kick off your next Gatsby project with this all-in-one starter. This starter supports is fully optimized for performance, SEO and accessibility, giving you straight 100s out of the box.`,
+    description: `25+ customizable Twitter themes and themes`,
     author: `@jarodpeachey`,
     siteUrl: "https://gatsby.com",
   },

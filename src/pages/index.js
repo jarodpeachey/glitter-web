@@ -3,6 +3,7 @@ import SEO from "../components/SEO";
 import Navigation from "../components/Navigation";
 import "../styles/partials/pages/_home.scss";
 import { Row, Column } from "@react-tiny-grid/core";
+import Carousel from "../components/Carousel";
 
 const Home = ({ props }) => {
   return (
@@ -18,18 +19,17 @@ const Home = ({ props }) => {
           <div className="row">
             <div className="col-lg-5">
               <h1 className="section-heading display" id="hero__title">
-                <span>Customize Twitter</span> With Just A Few Clicks
+                <span>Customize Twitter</span> With One Click
               </h1>
               <p className="section-description">
-                Glitter is a Chrome extension that lets you customize everything from the background colors to
-                buttons, box-shadows to inputs, and more.
+                Glitter is a Chrome extension with over 15 customizable Twitter themes to add some pop to your Twitter experience.
               </p>
-              <p>Choose from 15+ presets, or create your own theme. The possibilities are endless.</p>
+              <p className="section-description">Each theme is completely customizable, from the colors of the buttons, to the inputs, backgrounds and more.</p>
               <a href="/" className="btn">
                 Get it now
               </a>
               <a href="/" className="btn outlined">
-                View templates
+                View themes
               </a>
             </div>
             <div className="col-lg-6">
@@ -101,8 +101,8 @@ const Home = ({ props }) => {
               </div>
               <h3 id="custom__title">Make Twitter yours</h3>
               <p>
-                Tired of the old Twitter design? With Glitter, you can give your Twitter feed a refresh with custom colors, fonts and more. Use your own theme,
-                or use one of our 4 presets: dark, light, solarized and inverted.
+                Tired of the old Twitter design? With Glitter, you can give your Twitter feed a refresh with custom colors, fonts and more. It's as simple as
+                selecting a preset theme and customizing it to your hearts content.
               </p>
             </div>
             <div className="col-md-6">
@@ -137,14 +137,7 @@ const Home = ({ props }) => {
                       <path d="M0 8.00001C0 3.58173 3.58172 0 8 0H692C696.418 0 700 3.58172 700 8V442C700 446.418 696.418 450 692 450H8.00002C3.58174 450 0 446.418 0 442V8.00001Z" />
                     </clipPath>
                   </defs>
-                  <image
-                    width="100%"
-                    height="100%"
-                    preserveAspectRatio="xMinYMin slice"
-                    xlinkHref="/media/img/teal.jpg"
-                    clip-path="url(#twitter-new)"
-                    y="25"
-                  />
+                  <image width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlinkHref="/media/img/teal.jpg" clip-path="url(#twitter-new)" y="25" />
                   <g className="browser-top">
                     <path d="M0 8C0 3.58172 3.58172 0 8 0H692C696.418 0 700 3.58172 700 8V28H0V8Z" fill="black" />
                     <rect x="90" y="9" width="500" height="10" fill="white" fill-opacity="0.2" />
@@ -278,7 +271,7 @@ const Home = ({ props }) => {
               <div className="icon three">
                 <img loading="lazy" src="/media/img/icons/icon--settings.png" alt="Settings icon" />
               </div>
-              <h3>Custom presets</h3>
+              <h3>Custom themes</h3>
               <p>
                 Glitter lets you to create <span>unlimited presests</span> and themes, so you can always switch back and forth between your favorite styles.
               </p>
@@ -287,6 +280,44 @@ const Home = ({ props }) => {
               <img loading="lazy" src="/media/img/light.jpg" className="feature__image" alt="Custom Twitter theme" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="themes">
+        <div className="container">
+          <h2 className="section-heading">1,000s of possibilities</h2>
+          <p className="section-description">Choose from 25+ plus Glitter themes, or create your very own.</p>
+          <Carousel
+            slides={[
+              {
+                image: "/media/img/light.jpg",
+                name: "Light"
+              },
+              {
+                image: "/media/img/dark.jpg",
+                name: "Dark"
+              },
+              {
+                image: "/media/img/pink.jpg",
+                name: "Retro Pink"
+              },
+              {
+                image: "/media/img/solarized.jpg",
+                name: "Solarized"
+              },
+              {
+                image: "/media/img/teal.jpg",
+                name: "Retro Teal"
+              },
+              {
+                image: "/media/img/inverted.jpg",
+                name: "Inverted"
+              },
+              {
+                image: "/media/img/solarized.jpg",
+                name: "Solarized"
+              },
+            ]}
+          />
         </div>
       </section>
     </>
