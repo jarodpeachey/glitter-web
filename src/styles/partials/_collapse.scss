@@ -1,0 +1,67 @@
+@use "colors" as *;
+@use "breakpoints" as *;
+@use "shadows" as *;
+
+.collapse {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  box-shadow: $shadow--one;
+
+  h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    font-weight: 500;
+
+    .arrow {
+      height: 32px;
+      width: 32px;
+      margin-left: auto;
+      transform: rotate(0deg);
+      transition: 0.4s;
+    }
+  }
+
+  .collapse__content {
+    transition: 0.4s;
+    overflow: hidden;
+    // width: calc(100% + 32px);
+    // left: -1rem;
+    position: relative;
+    max-height: 0px;
+
+    p {
+      margin: 0;
+      padding-left: 2rem;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1.5rem;
+      line-height: 1.625rem;
+      opacity: .8;
+      transition: 0.4s;
+    }
+  }
+
+  &.open {
+    .collapse__title {
+      // font-weight: 600;
+
+      .arrow {
+        transform: rotate(-180deg);
+      }
+    }
+
+    p {
+      opacity: 1;
+    }
+  }
+}
+
+// .carousel--talent {
+// 	display: flex;
+// }

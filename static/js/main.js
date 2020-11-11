@@ -13,4 +13,5 @@
 
   addScript("/js/navigation.js");
   addScript("/js/carousel.js");
+  addScript("/js/collapse.js");
 })();

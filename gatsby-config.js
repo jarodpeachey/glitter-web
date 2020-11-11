@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Plus`,
-    description: `25+ customizable Twitter themes and themes`,
+    description: `25+ customizable themes for Twitter`,
     author: `@jarodpeachey`,
     siteUrl: "https://gatsby.com",
   },
@@ -23,7 +23,9 @@ module.exports = {
         printRejected: true,
         develop: false,
         tailwind: false,
-        whitelist: [],
+        whitelist: [`
+          scroll
+        `],
       },
     },
     "gatsby-plugin-split-css",

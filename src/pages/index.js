@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import "../styles/partials/pages/_home.scss";
 import { Row, Column } from "@react-tiny-grid/core";
 import Carousel from "../components/Carousel";
+import Collapse from '../components/Collapse';
 
 const Home = ({ props }) => {
   return (
@@ -28,7 +29,7 @@ const Home = ({ props }) => {
               <a href="/" className="btn">
                 Get it now
               </a>
-              <a href="/" className="btn outlined">
+              <a href="/themes" className="btn outlined">
                 View themes
               </a>
             </div>
@@ -46,7 +47,7 @@ const Home = ({ props }) => {
                         width="100%"
                         height="100%"
                         preserveAspectRatio="xMinYMin slice"
-                        xlinkHref="/media/img/pink.jpg"
+                        xlinkHref="/media/img/contrast.jpg"
                         clip-path="url(#hero-image)"
                         y="25"
                       />
@@ -71,7 +72,7 @@ const Home = ({ props }) => {
                         width="100%"
                         height="100%"
                         preserveAspectRatio="xMinYMin slice"
-                        xlinkHref="/media/img/solarized.jpg"
+                        xlinkHref="/media/img/mars.jpg"
                         clip-path="url(#hero-image-small)"
                         y="25"
                       />
@@ -90,11 +91,90 @@ const Home = ({ props }) => {
           </div>
         </div>
       </section>
+      <section className="themes">
+        <div className="container">
+          <h2 className="section-heading">1,000s of possibilities</h2>
+          <p className="section-description">Choose from 25+ plus Glitter themes, or create your very own.</p>
+          <Carousel
+            slides={[
+              {
+                image: "/media/img/light.jpg",
+                name: "Light",
+              },
+              {
+                image: "/media/img/dark.jpg",
+                name: "Dark",
+              },
+              {
+                image: "/media/img/contrast.jpg",
+                name: "Contrast",
+              },
+              {
+                image: "/media/img/tron.jpg",
+                name: "Tron",
+              },
+              {
+                image: "/media/img/pink.jpg",
+                name: "Retro Pink",
+              },
+              {
+                image: "/media/img/solarized.jpg",
+                name: "Solarized",
+              },
+              {
+                image: "/media/img/neon.jpg",
+                name: "Neon",
+              },
+              {
+                image: "/media/img/inverted.jpg",
+                name: "Inverted",
+              },
+              {
+                image: "/media/img/mars.jpg",
+                name: "Mars",
+              },
+            ]}
+          />
+        </div>
+        {/* <a href="/themes" className="btn">View all themes</a> */}
+      </section>
+
       <section className="features">
         <div className="container">
-          <h2 className="section-heading">Some video headline</h2>
-          <p className="section-description">Some description for the video</p>
-          <div className="row feature">
+          <h2 className="section-heading">Features</h2>
+          <p className="section-description">Whether you're looking for a one-click theme or advanced customization, Glitter has you covered.</p>
+          <div className="row">
+            <div className="col-sm-6 col-md-4">
+              <div className="feature">
+                <div className="icon one">
+                  <img loading="lazy" src="/media/img/icons/icon--shapes.png" alt="Shapes icon" />
+                </div>
+                <h3>25+ Themes</h3>
+                <p>Glitter comes with over 25 ready-made themes, and more are being added all the time. Choose from Retro, Dark, Light and many more.</p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+              <div className="feature">
+                <div className="icon two">
+                  <img loading="lazy" src="/media/img/icons/icon--tools.png" alt="Tools icon" />
+                </div>
+                <h3>Advanced Customization</h3>
+                <p>
+                  Can't quite find a theme you like? Not a problem! Glitter let's you fully customize each theme, so you can find your perfect Twitter theme.
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+              <div className="feature">
+                <div className="icon three">
+                  <img loading="lazy" src="/media/img/icons/icon--settings.png" alt="Settings icon" />
+                </div>
+                <h3>Theme Sharing</h3>
+                <p>Built a really cool theme that you want to share? Export it and share it with your friends/family!</p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="row feature">
             <div className="col-md-5">
               <div className="icon one">
                 <img loading="lazy" src="/media/img/icons/icon--tools.png" alt="Tools icon" />
@@ -279,44 +359,16 @@ const Home = ({ props }) => {
             <div className="col-md-6 offset-md-1">
               <img loading="lazy" src="/media/img/light.jpg" className="feature__image" alt="Custom Twitter theme" />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
-      <section className="themes">
+      <section className="faqs">
         <div className="container">
-          <h2 className="section-heading">1,000s of possibilities</h2>
-          <p className="section-description">Choose from 25+ plus Glitter themes, or create your very own.</p>
-          <Carousel
-            slides={[
-              {
-                image: "/media/img/light.jpg",
-                name: "Light"
-              },
-              {
-                image: "/media/img/dark.jpg",
-                name: "Dark"
-              },
-              {
-                image: "/media/img/pink.jpg",
-                name: "Retro Pink"
-              },
-              {
-                image: "/media/img/solarized.jpg",
-                name: "Solarized"
-              },
-              {
-                image: "/media/img/teal.jpg",
-                name: "Retro Teal"
-              },
-              {
-                image: "/media/img/inverted.jpg",
-                name: "Inverted"
-              },
-              {
-                image: "/media/img/solarized.jpg",
-                name: "Solarized"
-              },
-            ]}
+          <h2 className="section-heading">FAQs</h2>
+          <Collapse
+            title="FAQ 1"
+            content="This is the answer to a question. Isn't that neat? Lorem ipsum dolor sit amet. The question doesn't always answer itself, but it might. An apple a day keeps the doctor away. More dummy text."
+            id="collapse-1"
           />
         </div>
       </section>

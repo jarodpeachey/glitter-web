@@ -23,17 +23,19 @@
   // ADD SKEW TO SLIDES
   slides.forEach((slide, index) => {
     if (index === totalSlides[2]) {
-      slide.style.transform = slide.style.transform.replace("scale(1.3)", "") + "scale(1.6)";
+      slide.style.transform = slide.style.transform.replace("scale(1.4)", "") + "scale(1.8)";
       slide.style.perspective = "0px";
       slide.classList.add("middle");
       slide.classList.remove("edge");
       slide.classList.remove("outer");
 
       slide.firstElementChild.style.transform = "none";
-      indicator.innerHTML = slide.id;
+      setTimeout(() => {
+        indicator.innerHTML = slide.id;
+      }, 200);
       console.log(slide.id);
     } else if (index === totalSlides[1] || index === totalSlides[3]) {
-      slide.style.transform = slide.style.transform.replace("scale(1.6)", "") + "scale(1.3)";
+      slide.style.transform = slide.style.transform.replace("scale(1.8)", "") + "scale(1.4)";
       slide.style.perspective = "1000px";
       slide.classList.add("edge");
       slide.classList.remove("middle");
@@ -45,7 +47,7 @@
         slide.firstElementChild.style.transform = "rotateY(18deg)";
       }
     } else if (index === totalSlides[0] || index === totalSlides[4]) {
-      slide.style.transform = slide.style.transform.replace("scale(1.6)", "").replace("scale(1.3)", "");
+      slide.style.transform = slide.style.transform.replace("scale(1.8)", "").replace("scale(1.4)", "");
       slide.style.perspective = "1000px";
       slide.classList.add("outer");
       slide.classList.remove("middle");
@@ -57,7 +59,7 @@
         slide.firstElementChild.style.transform = "rotateY(33deg)";
       }
     } else {
-      slide.style.transform = slide.style.transform.replace("scale(1.6)", "").replace("scale(1.3)", "");
+      slide.style.transform = slide.style.transform.replace("scale(1.8)", "").replace("scale(1.4)", "");
       slide.style.perspective = "0px";
       slide.classList.remove("middle");
       slide.classList.remove("edge");
@@ -69,18 +71,18 @@
 
   function updateSlidesToShow(direction) {
     // GET TRANSLATE OF A MIDDLE SLIDE
-    const slideTranslate = parseFloat(slides[4].style.transform.replace("translateX(", "").replace("px)", "")) || 0;
+    const slideTranslate = parseFloat(slides[5].style.transform.replace("translateX(", "").replace("px)", "")) || 0;
 
     // CHECK IF THE SLIDE IS ONE POSITION TO THE RIGHT OF ORIGINAL INDEX
     const isAfterOriginalIndex =
-      slideTranslate !== 0 && parseFloat(slides[4].style.left, 10) !== 0
-        ? slideTranslate - Math.abs(parseFloat(slides[4].style.left, 10)) === 200 ||
-          Math.abs(parseFloat(slides[4].style.left, 10)) - Math.abs(slideTranslate) === 200
-        : slideTranslate - parseFloat(slides[4].style.left, 10) === -200;
+      slideTranslate !== 0 && parseFloat(slides[5].style.left, 10) !== 0
+        ? slideTranslate - Math.abs(parseFloat(slides[5].style.left, 10)) === 200 ||
+          Math.abs(parseFloat(slides[5].style.left, 10)) - Math.abs(slideTranslate) === 200
+        : slideTranslate - parseFloat(slides[5].style.left, 10) === -200;
 
     // CHECK IF SLIDE IS ONE POSITION TO THE LEFT OF ORIGINAL INDEX
     const isBeforeOriginalIndex =
-      Math.abs(slideTranslate) - parseFloat(slides[4].style.left, 10) === 200 && Math.abs(parseFloat(slides[4].style.left, 10)) !== 0;
+      Math.abs(slideTranslate) - parseFloat(slides[5].style.left, 10) === 200 && Math.abs(parseFloat(slides[4].style.left, 10)) !== 0;
 
     // RESET ALL TO 0 IF SLIDES ARE 1 INDEX AWAY FROM ORIGINAL INDEX
     if (direction === "forwards" && isAfterOriginalIndex) {
@@ -97,7 +99,7 @@
             slide.style.transform = "translateX(0px)";
           }, 310);
         } else {
-          slide.style.transition = ".4s ease-in-out";
+          slide.style.transition = ".6s ease-in-out";
           slide.style.left = "0px";
           slide.style.transform = "translateX(0px)";
         }
@@ -121,7 +123,7 @@
           }, 310);
         } else {
           slide.classList.remove("testingThisClassNameForThisSlide");
-          slide.style.transition = ".4s ease-in-out";
+          slide.style.transition = ".6s ease-in-out";
           slide.style.left = "0px";
           slide.style.transform = "translateX(0px)";
         }
@@ -133,7 +135,7 @@
       if (direction === "forwards") {
         slides.forEach((slide, index) => {
           // ADD TRANSITION
-          slide.style.transition = ".4s ease-in-out";
+          slide.style.transition = ".6s ease-in-out";
 
           // GET CURRENT TRANSLATION
           const currentTranslate = parseFloat(slide.style.transform.replace("translateX(", "").replace("px)", "")) || 0;
@@ -142,17 +144,19 @@
           slide.style.left = `${parseFloat(slide.style.left, 10) - slide.clientWidth}px`;
 
           if (index === totalSlides[3]) {
-            slide.style.transform = slide.style.transform.replace("scale(1.3)", "") + "scale(1.6)";
+            slide.style.transform = slide.style.transform.replace("scale(1.4)", "") + "scale(1.8)";
             slide.style.perspective = "0px";
             slide.classList.add("middle");
             slide.classList.remove("edge");
             slide.classList.remove("outer");
 
             slide.firstElementChild.style.transform = "none";
-            indicator.innerHTML = slide.id;
+            setTimeout(() => {
+              indicator.innerHTML = slide.id;
+            }, 200);
             console.log(slide.id);
           } else if (index === totalSlides[2] || index === totalSlides[4]) {
-            slide.style.transform = slide.style.transform.replace("scale(1.6)", "") + "scale(1.3)";
+            slide.style.transform = slide.style.transform.replace("scale(1.8)", "") + "scale(1.4)";
             slide.style.perspective = "1000px";
             slide.classList.add("edge");
             slide.classList.remove("middle");
@@ -164,7 +168,7 @@
               slide.firstElementChild.style.transform = "rotateY(18deg)";
             }
           } else if (index === totalSlides[1] || index === totalSlides[5]) {
-            slide.style.transform = slide.style.transform.replace("scale(1.6)", "").replace("scale(1.3)", "");
+            slide.style.transform = slide.style.transform.replace("scale(1.8)", "").replace("scale(1.4)", "");
             slide.style.perspective = "1000px";
             slide.classList.add("outer");
             slide.classList.remove("middle");
@@ -176,7 +180,7 @@
               slide.firstElementChild.style.transform = "rotateY(33deg)";
             }
           } else {
-            slide.style.transform = slide.style.transform.replace("scale(1.6)", "").replace("scale(1.3)", "");
+            slide.style.transform = slide.style.transform.replace("scale(1.8)", "").replace("scale(1.4)", "");
             slide.style.perspective = "0px";
             slide.classList.remove("middle");
             slide.classList.remove("edge");
@@ -211,17 +215,19 @@
         // TRANSFORM EACH SLIDE LEFT
         slides.forEach((slide, index) => {
           if (index === totalSlides[1]) {
-            slide.style.transform = slide.style.transform.replace("scale(1.3)", "") + "scale(1.6)";
+            slide.style.transform = slide.style.transform.replace("scale(1.4)", "") + "scale(1.8)";
             slide.style.perspective = "0px";
             slide.classList.add("middle");
             slide.classList.remove("edge");
             slide.classList.remove("outer");
 
             slide.firstElementChild.style.transform = "none";
-            indicator.innerHTML = slide.id;
+            setTimeout(() => {
+              indicator.innerHTML = slide.id;
+            }, 200);
             console.log(slide.id);
           } else if (index === totalSlides[0] || index === totalSlides[2]) {
-            slide.style.transform = slide.style.transform.replace("scale(1.6)", "") + "scale(1.3)";
+            slide.style.transform = slide.style.transform.replace("scale(1.8)", "") + "scale(1.4)";
             slide.style.perspective = "1000px";
             slide.classList.add("edge");
             slide.classList.remove("middle");
@@ -233,19 +239,19 @@
               slide.firstElementChild.style.transform = "rotateY(18deg)";
             }
           } else if (index === totalSlides[3] || index === totalSlides[totalSlides.length - 1]) {
-            slide.style.transform = slide.style.transform.replace("scale(1.6)", "").replace("scale(1.3)", "");
+            slide.style.transform = slide.style.transform.replace("scale(1.8)", "").replace("scale(1.4)", "");
             slide.style.perspective = "1000px";
             slide.classList.add("outer");
             slide.classList.remove("middle");
             slide.classList.remove("edge");
 
-            if (index === totalSlides[0]) {
+            if (index === totalSlides[totalSlides.length - 1]) {
               slide.firstElementChild.style.transform = "rotateY(-33deg)";
             } else {
               slide.firstElementChild.style.transform = "rotateY(33deg)";
             }
           } else {
-            slide.style.transform = slide.style.transform.replace("scale(1.6)", "").replace("scale(1.3)", "");
+            slide.style.transform = slide.style.transform.replace("scale(1.8)", "").replace("scale(1.4)", "");
             slide.style.perspective = "0px";
             slide.classList.remove("middle");
             slide.classList.remove("edge");
@@ -255,7 +261,7 @@
           }
 
           // ADD TRANSITION
-          slide.style.transition = ".4s ease-in-out";
+          slide.style.transition = ".6s ease-in-out";
 
           // GET CURRENT TRANSLATION
           const currentTranslate = parseFloat(slide.style.transform.replace("translateX(", "").replace("px)", "")) || 0;

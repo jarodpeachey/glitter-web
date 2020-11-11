@@ -12,37 +12,46 @@ $slideHeight: 200;
   overflow-y: visible;
   // max-width: 400px;
   // left: -400px;
+  height: 160px;
+  width: 140%;
+  left: -20%;
+
+  @include media-breakpoint-up(xs) {
+    height: 160px;
+    width: 120%;
+    left: -10%;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 220px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 305px;
+    width: 110%;
+    left: -5%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 333px;
+    width: 100%;
+    left: 0;
+  }
 
   .carousel__mask {
     position: relative;
     // width: #{$slideWidth}px;
     width: 100%;
-    height: #{$slideHeight}px;
-    min-height: #{$slideHeight}px;
   }
 
   .carousel__track {
     position: relative;
     display: flex;
-    height: #{$slideHeight}px;
-    min-height: #{$slideHeight}px;
     width: 100%;
     overflow-y: visible;
 
     &.active {
       transition: 0.3s ease-in-out;
-    }
-
-    &::after {
-      display: block;
-      width: 100%;
-      height: 100%;
-      content: "";
-      box-shadow: $shadow--four;
-      position: absolute;
-      top: 0;
-      left: -400px;
-      width: calc(100% + 800px);
     }
   }
 
@@ -51,18 +60,18 @@ $slideHeight: 200;
     left: 0;
     position: relative;
     overflow: hidden;
-    height: #{$slideHeight}px;
-    min-height: #{$slideHeight}px;
     box-shadow: none;
     z-index: 0;
     overflow: visible;
+    opacity: 0.4;
 
     svg {
-      transition: 0.4s ease-in-out;
+      transition: 0.6s ease-in-out;
     }
 
     &.middle {
       z-index: 9;
+      opacity: 1;
 
       svg {
         box-shadow: $shadow--four;
@@ -71,10 +80,15 @@ $slideHeight: 200;
 
     &.edge {
       z-index: 3;
+      opacity: 0.8;
 
       svg {
         box-shadow: $shadow--two;
       }
+    }
+
+    &.outer {
+      opacity: 0.6;
     }
 
     &:first-child {
@@ -158,7 +172,15 @@ $slideHeight: 200;
   font-family: "Rubik";
   font-weight: 500;
   font-size: 1.1rem;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 110px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 126px;
+  }
 }
 
 .carousel__indicator {
@@ -168,6 +190,8 @@ $slideHeight: 200;
   text-transform: uppercase;
   background: $color--pink;
   color: white;
+  min-width: 108px;
+  text-align: center;
 }
 
 .carousel__control {
