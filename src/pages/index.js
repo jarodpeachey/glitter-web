@@ -47,7 +47,7 @@ const Home = ({ props }) => {
                         width="100%"
                         height="100%"
                         preserveAspectRatio="xMinYMin slice"
-                        xlinkHref="/media/img/contrast.jpg"
+                        xlinkHref="/media/img/contrast.png"
                         clip-path="url(#hero-image)"
                         y="25"
                       />
@@ -72,7 +72,7 @@ const Home = ({ props }) => {
                         width="100%"
                         height="100%"
                         preserveAspectRatio="xMinYMin slice"
-                        xlinkHref="/media/img/mars.jpg"
+                        xlinkHref="/media/img/midnight.png"
                         clip-path="url(#hero-image-small)"
                         y="25"
                       />
