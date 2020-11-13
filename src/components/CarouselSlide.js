@@ -9,7 +9,7 @@ const TalentCarouselSlide = ({ image, className, name }) => {
             <path d="M0 8.00001C0 3.58173 3.58172 0 8 0H692C696.418 0 700 3.58172 700 8V442C700 446.418 696.418 450 692 450H8.00002C3.58174 450 0 446.418 0 442V8.00001Z" />
           </clipPath>
         </defs>
-        <image width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlinkHref={image} clip-path="url(#browser-cutout)" y="25" />
+        <image width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlinkHref={image} clip-path="url(#browser-cutout)" loading="lazy" y="25" />
         <g className="browser-top">
           <path d="M0 8C0 3.58172 3.58172 0 8 0H692C696.418 0 700 3.58172 700 8V28H0V8Z" fill="black" />
           <rect x="90" y="9" width="500" height="10" fill="white" fill-opacity="0.2" />

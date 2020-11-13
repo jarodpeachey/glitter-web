@@ -91,7 +91,7 @@
   slides.forEach((slide, index) => {
     if (index === totalSlides[originalMiddleSlide]) {
       slide.style.transform = slide.style.transform.replace(edgeScale, "") + middleScale;
-      slide.style.visibility = "visible";
+      slide.style.opacity = "1";
 
       slide.classList.add("middle");
       slide.classList.remove("edge");
@@ -103,7 +103,7 @@
       }, 200);
       console.log(slide.id);
     } else if (index === totalSlides[originalEdgeSlideLeft] || index === totalSlides[originalEdgeSlideRight]) {
-      slide.style.visibility = "visible";
+      slide.style.opacity = "1";
       slide.style.transform = slide.style.transform.replace(middleScale, "").replace(outerScale, "") + edgeScale;
 
       slide.classList.add("edge");
@@ -116,7 +116,7 @@
         slide.firstElementChild.style.transform = "rotateY(18deg) translateX(70px)";
       }
     } else if (index === totalSlides[originalOuterSlideLeft] || index === totalSlides[originalOuterSlideRight]) {
-      slide.style.visibility = "visible";
+      slide.style.opacity = "1";
       slide.style.transform = slide.style.transform.replace(middleScale, "").replace(edgeScale, "") + outerScale;
 
       slide.classList.add("outer");
@@ -129,7 +129,7 @@
         slide.firstElementChild.style.transform = "rotateY(42deg) translateX(60px)";
       }
     } else if (index === totalSlides[originalFarSlideLeft] || index === totalSlides[originalFarSlideRight]) {
-      slide.style.visibility = "visible";
+      slide.style.opacity = "1";
       slide.classList.remove("outer");
 
       slide.style.transform = slide.style.transform.replace(middleScale, "").replace(edgeScale, "").replace(outerScale, "");
@@ -175,7 +175,7 @@
         }
         if (index === totalSlides[0]) {
           setTimeout(() => {
-            slide.style.transition = "none";
+            slide.style.transition = "0s";
             slide.style.left = "0px";
             slide.style.transform = "translateX(0px)";
           }, 400);
@@ -198,7 +198,7 @@
         if (index === totalSlides[totalSlides.length - 1]) {
           slide.classList.add("testingThisClassNameForThisSlide");
           setTimeout(() => {
-            slide.style.transition = "none";
+            slide.style.transition = "0s";
             slide.style.left = "0px";
             slide.style.transform = "translateX(0px)";
           }, 400);
@@ -216,7 +216,7 @@
       if (direction === "forwards") {
         slides.forEach((slide, index) => {
           // ADD TRANSITION
-          // slide.style.visibility = "visible";
+          // slide.style.opacity = "1";
           slide.style.transition = ".6s ease";
           slide.firstElementChild.transition = ".6s ease";
 
@@ -264,8 +264,8 @@
               slide.firstElementChild.style.transform = "rotateY(42deg) translateX(60px)";
             }
           } else if (index === totalSlides[forwardsFarSlideLeft] || index === totalSlides[forwardsFarSlideRight]) {
-            slide.style.transition = "none";
-            slide.style.visibility = "visible";
+            slide.style.transition = "0s";
+            slide.style.opacity = "1";
             slide.style.transition = ".6s ease";
             slide.classList.remove("outer");
 
@@ -275,7 +275,7 @@
               slide.firstElementChild.style.transform = "rotateY(-60deg) translateX(0px)";
               slide.firstElementChild.style.left = "50px";
             } else {
-              slide.style.transition = "none";
+              slide.style.transition = "0s";
               slide.firstElementChild.style.transition = "none";
               slide.firstElementChild.style.transform = "rotateY(60deg) translateX(0px) scale(.8)";
               slide.firstElementChild.style.left = "-120px";
@@ -293,12 +293,14 @@
             // MOVE FIRST SLIDE TO END
             if (index === totalSlides[forwardsInvisibleSlideLeft]) {
               slide.firstElementChild.style.left = "400px";
+              slide.style.zIndex = "-1";
 
               setTimeout(() => {
                 // SET TRANSITION TO NONE
-                slide.style.transition = "none";
+                slide.style.transition = "0s";
                 slide.firstElementChild.style.transform = "";
-                slide.style.visibility = "hidden";
+                slide.style.opacity = "0";
+                slide.style.zIndex = "-1";
 
                 // SET NEW TRANSFORM
                 if (currentTranslate !== 0) {
@@ -338,7 +340,7 @@
         // TRANSFORM EACH SLIDE LEFT
         slides.forEach((slide, index) => {
           // ADD TRANSITION
-          // slide.style.visibility = "visible";
+          // slide.style.opacity = "1";
           slide.style.transition = ".6s ease";
           slide.firstElementChild.transition = ".6s ease";
 
@@ -387,8 +389,8 @@
               slide.firstElementChild.style.transform = "rotateY(42deg) translateX(60px)";
             }
           } else if (index === totalSlides[backwardsFarSlideLeft] || index === totalSlides[backwardsFarSlideRight]) {
-            slide.style.transition = "none";
-            slide.style.visibility = "visible";
+            slide.style.transition = "0s";
+            slide.style.opacity = "1";
             slide.style.transition = ".6s ease";
             slide.classList.remove("outer");
 
@@ -402,15 +404,15 @@
           } else {
             // MOVE FIRST SLIDE TO END
             if (index === totalSlides[backwardsInvisibleSlideRight]) {
-              // slide.style.transition = "none";
+              // slide.style.transition = "0s";
               slide.firstElementChild.style.left = "-400px";
               slide.style.zIndex = "-1";
 
               setTimeout(() => {
                 slide.firstElementChild.style.left = "0px";
                 slide.firstElementChild.style.transition = "none";
-                slide.style.transition = "none";
-                slide.style.visibility = "hidden";
+                slide.style.transition = "0s";
+                slide.style.opacity = "0";
 
                 setTimeout(() => {
                   slide.firstElementChild.style.transition = ".6s ease";
@@ -432,9 +434,9 @@
           // MOVE LAST SLIDE TO START
           if (index === totalSlides[totalSlides.length - 1]) {
             // SET TRANSITION TO NONE
-            slide.style.transition = "none";
+            slide.style.transition = "0s";
             slide.firstElementChild.transition = "0s";
-            slide.style.visibility = "visible";
+            slide.style.opacity = "1";
 
             // SET NEW TRANSFORM
             if (currentTranslate === 0) {
@@ -447,7 +449,7 @@
                 )`;
             }
 
-            slide.style.transition = "none";
+            slide.style.transition = "0s";
             slide.firstElementChild.style.transition = "none";
             slide.firstElementChild.style.transform = "rotateY(-60deg) translateX(0px) scale(.8)";
             slide.firstElementChild.style.left = "120px";
