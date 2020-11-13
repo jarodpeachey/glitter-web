@@ -26,6 +26,8 @@
         font-family: inherit;
         font-weight: inherit;
         font-size: inherit;
+        color: $color--orange;
+        display: inline;
 
         background: linear-gradient(to bottom right, $color--purple-dark, $color--pink, $color--orange);
         -webkit-background-clip: text;
