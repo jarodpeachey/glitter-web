@@ -98,40 +98,64 @@ const Home = ({ props }) => {
           <Carousel
             slides={[
               {
-                image: "/media/img/light.jpg",
-                name: "Light",
+                name: 'Minimal Green',
+                image: "/media/img/minimal-green.png"
               },
               {
-                image: "/media/img/dark.jpg",
-                name: "Dark",
+                name: 'Solarized',
+                image: "/media/img/solarized.png"
               },
               {
-                image: "/media/img/contrast.jpg",
-                name: "Contrast",
+                name: 'Minimal',
+                image: "/media/img/minimal.png"
               },
               {
-                image: "/media/img/tron.jpg",
-                name: "Tron",
+                name: 'Flat Pink',
+                image: "/media/img/flat-pink.png"
               },
               {
-                image: "/media/img/pink.jpg",
-                name: "Retro Pink",
+                name: 'Neon Green',
+                image: "/media/img/neon-green.png"
               },
               {
-                image: "/media/img/solarized.jpg",
-                name: "Solarized",
+                name: 'Minimal Red',
+                image: "/media/img/minimal-red.png"
               },
               {
-                image: "/media/img/neon.jpg",
-                name: "Neon",
+                name: 'Light',
+                image: "/media/img/light.png"
               },
               {
-                image: "/media/img/inverted.jpg",
-                name: "Inverted",
+                name: 'Neon Red',
+                image: "/media/img/neon-red.png"
               },
               {
-                image: "/media/img/mars.jpg",
-                name: "Mars",
+                name: 'Flat Green',
+                image: "/media/img/flat-green.png"
+              },
+              {
+                name: 'Minimal Pink',
+                image: "/media/img/minimal-pink.png"
+              },
+              {
+                name: 'Flat',
+                image: "/media/img/flat.png"
+              },
+              {
+                name: 'Neon Pink',
+                image: "/media/img/neon-pink.png"
+              },
+              {
+                name: 'Flat Red',
+                image: "/media/img/flat-red.png"
+              },
+              {
+                name: 'Neon',
+                image: "/media/img/neon.png"
+              },
+              {
+                name: 'Dark',
+                image: "/media/img/dark.png"
               },
             ]}
           />

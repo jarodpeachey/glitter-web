@@ -71,18 +71,18 @@
 
   function updateSlidesToShow(direction) {
     // GET TRANSLATE OF A MIDDLE SLIDE
-    const slideTranslate = parseFloat(slides[5].style.transform.replace("translateX(", "").replace("px)", "")) || 0;
+    const slideTranslate = parseFloat(slides[7].style.transform.replace("translateX(", "").replace("px)", "")) || 0;
 
     // CHECK IF THE SLIDE IS ONE POSITION TO THE RIGHT OF ORIGINAL INDEX
     const isAfterOriginalIndex =
-      slideTranslate !== 0 && parseFloat(slides[5].style.left, 10) !== 0
-        ? slideTranslate - Math.abs(parseFloat(slides[5].style.left, 10)) === 200 ||
-          Math.abs(parseFloat(slides[5].style.left, 10)) - Math.abs(slideTranslate) === 200
-        : slideTranslate - parseFloat(slides[5].style.left, 10) === -200;
+      slideTranslate !== 0 && parseFloat(slides[7].style.left, 10) !== 0
+        ? slideTranslate - Math.abs(parseFloat(slides[7].style.left, 10)) === 200 ||
+          Math.abs(parseFloat(slides[7].style.left, 10)) - Math.abs(slideTranslate) === 200
+        : slideTranslate - parseFloat(slides[7].style.left, 10) === -200;
 
     // CHECK IF SLIDE IS ONE POSITION TO THE LEFT OF ORIGINAL INDEX
     const isBeforeOriginalIndex =
-      Math.abs(slideTranslate) - parseFloat(slides[5].style.left, 10) === 200 && Math.abs(parseFloat(slides[4].style.left, 10)) !== 0;
+      Math.abs(slideTranslate) - parseFloat(slides[7].style.left, 10) === 200 && Math.abs(parseFloat(slides[4].style.left, 10)) !== 0;
 
     // RESET ALL TO 0 IF SLIDES ARE 1 INDEX AWAY FROM ORIGINAL INDEX
     if (direction === "forwards" && isAfterOriginalIndex) {
