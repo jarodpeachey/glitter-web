@@ -114,19 +114,7 @@ $slideHeight: 200;
     }
 
     &:first-child {
-      margin-left: -#{12 / 3 / 12 * 100%};
-
-      @include media-breakpoint-up(sm) {
-        margin-left: -#{12 / 3 / 12 * 100%};
-      }
-
-      @include media-breakpoint-up(md) {
-        margin-left: -#{12 / 3 / 12 * 100%};
-      }
-
-      @include media-breakpoint-up(lg) {
-        margin-left: -#{12 / 3 / 12 * 100%};
-      }
+      margin-left: -#{12 / 1.5 / 12 * 100%};
 
       @media (min-width: 1200px) {
         margin-left: -#{12 / 5 / 12 * 100%};

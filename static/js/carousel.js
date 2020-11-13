@@ -15,6 +15,7 @@
 
   // ADD LEFT POSITION TO ALL SLIDES
   for (let i = 0; i < slides.length; i++) {
+    console.log(slides[i]);
     totalSlides.push(i);
     slides[i].style.left = "0px";
     slides[i].style.transform = "translateX(0px)";
@@ -53,7 +54,7 @@
   let edgeScale = "scale(1.4)";
   let outerScale = "scale(1)";
 
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth > 9) {
     originalMiddleSlide = 3;
     originalEdgeSlideLeft = 2;
     originalEdgeSlideRight = 4;
@@ -81,7 +82,9 @@
     backwardsFarSlideRight = 5;
     backwardsInvisibleSlideLeft = totalSlides.length - 2;
     backwardsInvisibleSlideRight = 6;
+  }
 
+  if (window.innerWidth > 1200) {
     middleScale = "scale(2.2)";
     edgeScale = "scale(1.8)";
     outerScale = "scale(1.5)";
@@ -268,6 +271,7 @@
             slide.style.opacity = "1";
             slide.style.transition = ".6s ease";
             slide.classList.remove("outer");
+            slide.firstElementChild.style.left = "0px";
 
             slide.style.transform = slide.style.transform.replace(middleScale, "").replace(edgeScale, "").replace(outerScale, "");
 
@@ -393,6 +397,7 @@
             slide.style.opacity = "1";
             slide.style.transition = ".6s ease";
             slide.classList.remove("outer");
+            slide.firstElementChild.style.left = "0px";
 
             slide.style.transform = slide.style.transform.replace(middleScale, "").replace(edgeScale, "").replace(outerScale, "");
 
