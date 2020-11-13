@@ -44,7 +44,7 @@ nav {
   padding: 10px;
   margin-left: auto;
   position: relative;
-  transition: all 0.15s ease-in-out; /* all 0.15s ease-in-out */
+  transition: all 0.15s ease; /* all 0.15s ease */
   transform: none; /* rotate(-45deg) */
   border-radius: 999px;
 
@@ -63,7 +63,7 @@ nav {
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: all 0.1s ease-out; /* all 0.15s ease-in */
+    transition: all 0.1s ease; /* all 0.15s ease */
   }
 
   span:nth-child(1) {
@@ -87,11 +87,11 @@ nav {
 
   /* purgecss start ignore */
   &.open {
-    transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease;
     transform: rotate(-45deg);
 
     span {
-      transition: all 0.15s ease-in;
+      transition: all 0.15s ease;
     }
     span:nth-child(1) {
       top: calc(50% - 1px);
