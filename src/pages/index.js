@@ -23,7 +23,7 @@ const Home = ({ props }) => {
                 <span>Customize Twitter</span> With One Click
               </h1>
               <p className="section-description">
-                Glitter is a Chrome extension with over 15 customizable Twitter themes to add some pop to your Twitter experience.
+                Glitter is a Chrome extension with 25 customizable Twitter themes to add some pop to your Twitter experience.
               </p>
               <p className="section-description">Each theme is completely customizable, from the colors of the buttons, to the inputs, backgrounds and more.</p>
               <a href="/" className="btn">
@@ -98,65 +98,57 @@ const Home = ({ props }) => {
           <Carousel
             slides={[
               {
-                name: 'Minimal Green',
-                image: "/media/img/minimal-green.png"
+                name: 'Light',
+                image: "/media/img/light-default.png"
               },
               {
-                name: 'Solarized',
-                image: "/media/img/solarized.png"
+                name: 'Dark Purple',
+                image: "/media/img/dark-purple.png"
               },
               {
                 name: 'Minimal',
-                image: "/media/img/minimal.png"
-              },
-              {
-                name: 'Flat Pink',
-                image: "/media/img/flat-pink.png"
-              },
-              {
-                name: 'Neon Green',
-                image: "/media/img/neon-green.png"
-              },
-              {
-                name: 'Minimal Red',
-                image: "/media/img/minimal-red.png"
-              },
-              {
-                name: 'Light',
-                image: "/media/img/light.png"
+                image: "/media/img/minimal-default.png"
               },
               {
                 name: 'Neon Red',
                 image: "/media/img/neon-red.png"
               },
               {
-                name: 'Flat Green',
-                image: "/media/img/flat-green.png"
-              },
-              {
-                name: 'Minimal Pink',
-                image: "/media/img/minimal-pink.png"
-              },
-              {
                 name: 'Flat',
-                image: "/media/img/flat.png"
+                image: "/media/img/flat-default.png"
               },
               {
-                name: 'Neon Pink',
-                image: "/media/img/neon-pink.png"
+                name: 'Dark Red',
+                image: "/media/img/dark-red.png"
               },
               {
-                name: 'Flat Red',
-                image: "/media/img/flat-red.png"
+                name: 'Light Pink',
+                image: "/media/img/light-pink.png"
               },
               {
-                name: 'Neon',
-                image: "/media/img/neon.png"
+                name: 'Neon Green',
+                image: "/media/img/neon-green.png"
               },
               {
-                name: 'Dark',
-                image: "/media/img/dark.png"
+                name: 'Dark White',
+                image: "/media/img/dark-white.png"
               },
+              {
+                name: 'Light Purple',
+                image: "/media/img/light-purple.png"
+              },
+              {
+                name: 'Neon Red',
+                image: "/media/img/minimal-red.png"
+              },
+              {
+                name: 'Dark Green',
+                image: "/media/img/dark-green.png"
+              },
+              {
+                name: 'Flat Pink',
+                image: "/media/img/flat-pink.png"
+              }
             ]}
           />
         </div>
