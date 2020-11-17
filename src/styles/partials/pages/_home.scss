@@ -21,6 +21,7 @@
     h1 {
       line-height: 76px;
       margin-bottom: 2rem;
+      -webkit-box-decoration-break: clone;
 
       span {
         font-family: inherit;
@@ -32,6 +33,7 @@
         background: linear-gradient(to bottom right, $color--purple-dark, $color--pink, $color--orange);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
       }
     }
 
