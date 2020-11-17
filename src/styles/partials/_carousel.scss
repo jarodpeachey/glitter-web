@@ -90,8 +90,10 @@ $slideHeight: 200;
       z-index: 9;
       // opacity: 1;
 
-      svg {
-        box-shadow: $shadow--four;
+      @include media-breakpoint-up(sm) {
+        svg {
+          box-shadow: $shadow--four;
+        }
       }
     }
 
@@ -99,8 +101,10 @@ $slideHeight: 200;
       z-index: 3;
       // opacity: 0.8;
 
-      svg {
-        box-shadow: $shadow--two;
+      @include media-breakpoint-up(sm) {
+        svg {
+          box-shadow: $shadow--three;
+        }
       }
     }
 
@@ -108,8 +112,10 @@ $slideHeight: 200;
       // opacity: 0.6;
       z-index: 1;
 
-      svg {
-        box-shadow: $shadow--one;
+      @include media-breakpoint-up(sm) {
+        svg {
+          box-shadow: $shadow--two;
+        }
       }
     }
 

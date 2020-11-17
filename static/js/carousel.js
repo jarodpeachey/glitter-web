@@ -291,7 +291,7 @@
                 slide.firstElementChild.style.transform = "rotateY(60deg) translateX(0px)";
                 slide.firstElementChild.style.left = "-50px";
                 slide.style.zIndex = null;
-              }, 100);
+              }, 10);
             }
           } else {
             // MOVE FIRST SLIDE TO END
@@ -422,7 +422,7 @@
                 setTimeout(() => {
                   slide.firstElementChild.style.transition = ".6s ease";
                   slide.style.zIndex = null;
-                }, 100);
+                }, 10);
               }, 400);
             } else {
               slide.style.transform = slide.style.transform.replace(middleScale, "").replace(edgeScale, "").replace(outerScale, "");
@@ -466,7 +466,7 @@
               slide.firstElementChild.style.transform = "rotateY(-60deg) translateX(0px)";
               slide.firstElementChild.style.left = "50px";
               slide.style.zIndex = null;
-            }, 100);
+            }, 10);
           }
         });
 

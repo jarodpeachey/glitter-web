@@ -23,9 +23,15 @@ module.exports = {
         printRejected: true,
         develop: false,
         tailwind: false,
-        whitelist: [`
-          scroll
-        `],
+        whitelist: [
+          'scroll',
+          'open',
+          'arrow',
+          'themes',
+          'arrows',
+          'outer',
+          'edge',
+        ],
       },
     },
     "gatsby-plugin-split-css",
