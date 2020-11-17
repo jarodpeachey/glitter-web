@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation";
 import "../styles/partials/pages/_home.scss";
 import { Row, Column } from "@react-tiny-grid/core";
 import Carousel from "../components/Carousel";
-import Collapse from '../components/Collapse';
+import Collapse from "../components/Collapse";
 
 const Home = ({ props }) => {
   return (
@@ -23,7 +23,7 @@ const Home = ({ props }) => {
                 <span>Customize Twitter</span> With One Click
               </h1>
               <p className="section-description">
-                Glitter is a Chrome extension with 25 customizable Twitter themes to add some pop to your Twitter experience.
+                Glitter is a Chrome extension with over 25 customizable Twitter themes to add some pop to your Twitter experience.
               </p>
               <p className="section-description">Each theme is completely customizable, from the colors of the buttons, to the inputs, backgrounds and more.</p>
               <a href="/" className="btn">
@@ -98,57 +98,57 @@ const Home = ({ props }) => {
           <Carousel
             slides={[
               {
-                name: 'Light',
-                image: "/media/img/light-default.png"
+                name: "Light",
+                image: "/media/img/light-default.png",
               },
               {
-                name: 'Dark Purple',
-                image: "/media/img/dark-purple.png"
+                name: "Dark Purple",
+                image: "/media/img/dark-purple.png",
               },
               {
-                name: 'Minimal',
-                image: "/media/img/minimal-default.png"
+                name: "Minimal",
+                image: "/media/img/minimal-default.png",
               },
               {
-                name: 'Neon Red',
-                image: "/media/img/neon-red.png"
+                name: "Neon Red",
+                image: "/media/img/neon-red.png",
               },
               {
-                name: 'Flat',
-                image: "/media/img/flat-default.png"
+                name: "Flat",
+                image: "/media/img/flat-default.png",
               },
               {
-                name: 'Dark Red',
-                image: "/media/img/dark-red.png"
+                name: "Dark Red",
+                image: "/media/img/dark-red.png",
               },
               {
-                name: 'Light Pink',
-                image: "/media/img/light-pink.png"
+                name: "Light Pink",
+                image: "/media/img/light-pink.png",
               },
               {
-                name: 'Neon Green',
-                image: "/media/img/neon-green.png"
+                name: "Neon Green",
+                image: "/media/img/neon-green.png",
               },
               {
-                name: 'Dark White',
-                image: "/media/img/dark-white.png"
+                name: "Dark White",
+                image: "/media/img/dark-white.png",
               },
               {
-                name: 'Light Purple',
-                image: "/media/img/light-purple.png"
+                name: "Light Purple",
+                image: "/media/img/light-purple.png",
               },
               {
-                name: 'Neon Red',
-                image: "/media/img/minimal-red.png"
+                name: "Neon Red",
+                image: "/media/img/minimal-red.png",
               },
               {
-                name: 'Dark Green',
-                image: "/media/img/dark-green.png"
+                name: "Dark Green",
+                image: "/media/img/dark-green.png",
               },
               {
-                name: 'Flat Pink',
-                image: "/media/img/flat-pink.png"
-              }
+                name: "Flat Pink",
+                image: "/media/img/flat-pink.png",
+              },
             ]}
           />
         </div>
@@ -166,7 +166,7 @@ const Home = ({ props }) => {
                   <img loading="lazy" src="/media/img/icons/icon--shapes.png" alt="Shapes icon" />
                 </div>
                 <h3>25+ Themes</h3>
-                <p>Glitter comes with over 25 ready-made themes, and more are being added all the time. Choose from Retro, Dark, Light and many more.</p>
+                <p>Glitter comes with over 25 ready-made themes, and more are being added all the time. Choose from Light, Neon, Dark and many more.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-4">
@@ -176,7 +176,8 @@ const Home = ({ props }) => {
                 </div>
                 <h3>Advanced Customization</h3>
                 <p>
-                  Can't quite find a theme you like? Not a problem! Glitter let's you fully customize each theme, so you can find your perfect Twitter theme.
+                  Can't quite find a theme you like? Not a problem! Glitter lets you create and edit as many themes as you want, so you can find the perfect
+                  fit.
                 </p>
               </div>
             </div>
@@ -185,8 +186,8 @@ const Home = ({ props }) => {
                 <div className="icon three">
                   <img loading="lazy" src="/media/img/icons/icon--settings.png" alt="Settings icon" />
                 </div>
-                <h3>Theme Sharing</h3>
-                <p>Built a really cool theme that you want to share? Export it and share it with your friends/family!</p>
+                <h3>Easy to Use</h3>
+                <p>Glitter is built to allow you to easily customize your Twitter theme, without worrying about any issues or complications.</p>
               </div>
             </div>
           </div>
@@ -382,10 +383,32 @@ const Home = ({ props }) => {
         <div className="container">
           <h2 className="section-heading">FAQs</h2>
           <Collapse
-            title="FAQ 1"
-            content="This is the answer to a question. Isn't that neat? Lorem ipsum dolor sit amet. The question doesn't always answer itself, but it might. An apple a day keeps the doctor away. More dummy text."
+            title="How do I use Glitter?"
+            content="To use Glitter, just add the Chrome extension to your browser, and it will automatically start working. To change the theme, click on the Glitter icon in your toolbar and select your theme."
             id="collapse-1"
           />
+          <Collapse title="How many themes can I save?" content="You can create and save as many themes as you want." id="collapse-2" />
+          <Collapse
+            title="Can I edit/delete a theme I don't like?"
+            content="Absolutely! Glitter lets you edit every theme, including the presets, and even lets you delete your custom themes if needed."
+            id="collapse-3"
+          />
+          <Collapse
+            title="I have another question"
+            content="If you've got another question, contact me at jarodpeachey@gmail.com, or on Twitter @jarodpeachey"
+            id="collapse-4"
+          />
+        </div>
+      </section>
+      <section className="footer">
+        <div className="container">
+          <img src="/media/img/logos/glitter-diamond.png" alt="Glitter logo" />
+          <p>
+            Made with 🍕 by{" "}
+            <a href="https://twitter.com/jarodpeachey" target="_blank">
+              Jarod Peachey
+            </a>
+          </p>
         </div>
       </section>
     </>
