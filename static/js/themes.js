@@ -49,7 +49,7 @@
           <div class="theme col-md-6 col-lg-4">
             <img src="${theme.image}" alt="${theme.title} Twitter theme" />
             <h3>${theme.title}</h3>
-            <a href="/">Get It</a>
+            <a class="btn" href="/">Get It</a>
           </div>
         `;
 
@@ -60,7 +60,7 @@
           <div class="theme col-md-6 col-lg-4">
             <img src="${theme.image}" alt="${theme.title} Twitter theme" />
             <h3>${theme.title}</h3>
-            <a className="btn" href="/">Get It</a>
+            <a class="btn" href="/">Get It</a>
           </div>
         `;
 

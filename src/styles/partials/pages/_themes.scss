@@ -69,16 +69,20 @@
         @include media-breakpoint-up(xs) {
           border: 1px solid #e8e8e8;
           border-left: none;
+          width: fit-content;
+          display: inline-block;
 
           &:first-of-type {
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
+            border-top-right-radius: 0px;
             border-left: 1px solid #e8e8e8;
           }
 
           &:last-of-type {
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 0px;
           }
         }
 
