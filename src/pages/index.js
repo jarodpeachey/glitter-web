@@ -395,7 +395,7 @@ const Home = ({ props }) => {
           />
           <Collapse
             title="I have another question"
-            content="If you've got another question, contact me at jarodpeachey@gmail.com, or on Twitter @jarodpeachey"
+            content="If you've got another question, contact me at <a href='mailto:jarodpeachey@gmail.com'>jarodpeachey@gmail.com</a>, or on Twitter <a href='https://twitter.com/jarodpeachey'>@jarodpeachey</a>"
             id="collapse-4"
           />
         </div>

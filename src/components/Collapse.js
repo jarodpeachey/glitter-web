@@ -9,7 +9,7 @@ const Collapse = props => {
         <img className="arrow" src="/media/img/icons/icon--arrow-right.svg" width="24" height="24" alt="" role="presentation" />
       </h4>
       <div className={`collapse__content ${props.id}--content`}>
-        <p>{props.content}</p>
+        <p dangerouslySetInnerHTML={{ __html: props.content }} />
       </div>
     </div>
   );
