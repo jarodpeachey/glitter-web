@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql, withPrefix } from "gatsby";
 import "../styles/_layout.scss";
 
-function SEO({ description, title, bodyClass, image = "/" }) {
+function SEO({ description, title, bodyClass, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {

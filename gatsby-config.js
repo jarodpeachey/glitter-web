@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Plus`,
+    title: `Glitter`,
     description: `25+ customizable themes for Twitter`,
     author: `@jarodpeachey`,
-    siteUrl: "https://gatsby.com",
+    siteUrl: "https://get-glitter.netlify.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
