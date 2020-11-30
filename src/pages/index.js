@@ -402,13 +402,20 @@ const Home = ({ props }) => {
       </section>
       <section className="footer">
         <div className="container">
-          <img src="/media/img/logos/glitter-diamond.png" alt="Glitter logo" />
-          <p>
-            Made with 🍕 by{" "}
-            <a href="https://twitter.com/jarodpeachey" target="_blank">
-              Jarod Peachey
-            </a>
-          </p>
+          <div className="flex">
+            <img src="/media/img/logos/glitter-diamond.png" alt="Glitter logo" />
+            <div className="flex">
+              <div className="menu">
+                <h2>Glitter</h2>
+                <p>Make Twitter yours</p>
+              </div>
+              <div className="menu">
+                <h3>Contact</h3>
+                <a href="mailto:jarodpeachey@gmail.com">Email</a>
+                <a href="https://twitter.com/jarodpeachey">Twitter</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

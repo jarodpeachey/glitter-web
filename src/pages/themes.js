@@ -132,7 +132,7 @@ const Themes = ({ props }) => {
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/midnight.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal.png" alt="Minimal Twitter theme" />
               <h3>Minimal Black</h3>
               <a href="/" className="btn">
                 Get it
