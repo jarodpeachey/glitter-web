@@ -138,7 +138,7 @@ const Home = ({ props }) => {
                 image: "/media/img/light-purple.png",
               },
               {
-                name: "Neon Red",
+                name: "Minimal Red",
                 image: "/media/img/minimal-red.png",
               },
               {
