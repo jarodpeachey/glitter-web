@@ -48,7 +48,7 @@ const Home = ({ props }) => {
                         width="100%"
                         height="100%"
                         preserveAspectRatio="xMinYMin slice"
-                        xlinkHref="/media/img/contrast.png"
+                        xlinkHref="/media/img/contrast.webp"
                         clip-path="url(#hero-image)"
                         y="25"
                       />
@@ -73,7 +73,7 @@ const Home = ({ props }) => {
                         width="100%"
                         height="100%"
                         preserveAspectRatio="xMinYMin slice"
-                        xlinkHref="/media/img/midnight.png"
+                        xlinkHref="/media/img/midnight.webp"
                         clip-path="url(#hero-image-small)"
                         y="25"
                       />
@@ -101,55 +101,55 @@ const Home = ({ props }) => {
               slides={[
                 {
                   name: "Light",
-                  image: "/media/img/light-default.png",
+                  image: "/media/img/light-default.webp",
                 },
                 {
                   name: "Dark Purple",
-                  image: "/media/img/dark-purple.png",
+                  image: "/media/img/dark-purple.webp",
                 },
                 {
                   name: "Minimal",
-                  image: "/media/img/minimal-default.png",
+                  image: "/media/img/minimal-default.webp",
                 },
                 {
                   name: "Neon Red",
-                  image: "/media/img/neon-red.png",
+                  image: "/media/img/neon-red.webp",
                 },
                 {
                   name: "Flat",
-                  image: "/media/img/flat-default.png",
+                  image: "/media/img/flat-default.webp",
                 },
                 {
                   name: "Dark Red",
-                  image: "/media/img/dark-red.png",
+                  image: "/media/img/dark-red.webp",
                 },
                 {
                   name: "Light Pink",
-                  image: "/media/img/light-pink.png",
+                  image: "/media/img/light-pink.webp",
                 },
                 {
                   name: "Neon Green",
-                  image: "/media/img/neon-green.png",
+                  image: "/media/img/neon-green.webp",
                 },
                 {
                   name: "Dark White",
-                  image: "/media/img/dark-white.png",
+                  image: "/media/img/dark-white.webp",
                 },
                 {
                   name: "Light Purple",
-                  image: "/media/img/light-purple.png",
+                  image: "/media/img/light-purple.webp",
                 },
                 {
                   name: "Minimal Red",
-                  image: "/media/img/minimal-red.png",
+                  image: "/media/img/minimal-red.webp",
                 },
                 {
                   name: "Dark Green",
-                  image: "/media/img/dark-green.png",
+                  image: "/media/img/dark-green.webp",
                 },
                 {
                   name: "Flat Pink",
-                  image: "/media/img/flat-pink.png",
+                  image: "/media/img/flat-pink.webp",
                 },
               ]}
             />

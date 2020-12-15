@@ -46,35 +46,35 @@ const Themes = ({ props }) => {
           </div>
           <div className="row" id="themes__wrapper">
             <div className="col-md-6 col-lg-4 theme" data-category="light">
-              <img src="/media/img/light-default.png" alt="Light Twitter theme" />
+              <img src="/media/img/light-default.webp" alt="Light Twitter theme" />
               <h3>Light</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="light">
-              <img src="/media/img/light-red.png" alt="Light Twitter theme" />
+              <img src="/media/img/light-red.webp" alt="Light Twitter theme" />
               <h3>Red</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="light">
-              <img src="/media/img/light-pink.png" alt="Light Twitter theme" />
+              <img src="/media/img/light-pink.webp" alt="Light Twitter theme" />
               <h3>Pink</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="light">
-              <img src="/media/img/light-purple.png" alt="Light Twitter theme" />
+              <img src="/media/img/light-purple.webp" alt="Light Twitter theme" />
               <h3>Purple</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="light">
-              <img src="/media/img/light-green.png" alt="Light Twitter theme" />
+              <img src="/media/img/light-green.webp" alt="Light Twitter theme" />
               <h3>Green</h3>
               <a href="/" className="btn">
                 Get it
@@ -82,42 +82,42 @@ const Themes = ({ props }) => {
             </div>
 
             <div className="col-md-6 col-lg-4 theme" data-category="dark">
-              <img src="/media/img/dark-default.png" alt="Dark Twitter theme" />
+              <img src="/media/img/dark-default.webp" alt="Dark Twitter theme" />
               <h3>Dark</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="dark">
-              <img src="/media/img/dark-white.png" alt="Dark Twitter theme" />
+              <img src="/media/img/dark-white.webp" alt="Dark Twitter theme" />
               <h3>Dark White</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="dark">
-              <img src="/media/img/dark-red.png" alt="Dark Twitter theme" />
+              <img src="/media/img/dark-red.webp" alt="Dark Twitter theme" />
               <h3>Dark Red</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="dark">
-              <img src="/media/img/dark-pink.png" alt="Dark Twitter theme" />
+              <img src="/media/img/dark-pink.webp" alt="Dark Twitter theme" />
               <h3>Dark Pink</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="dark">
-              <img src="/media/img/dark-purple.png" alt="Dark Twitter theme" />
+              <img src="/media/img/dark-purple.webp" alt="Dark Twitter theme" />
               <h3>Dark Purple</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="dark">
-              <img src="/media/img/dark-green.png" alt="Dark Twitter theme" />
+              <img src="/media/img/dark-green.webp" alt="Dark Twitter theme" />
               <h3>Dark Green</h3>
               <a href="/" className="btn">
                 Get it
@@ -125,42 +125,42 @@ const Themes = ({ props }) => {
             </div>
 
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/minimal-default.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal-default.webp" alt="Minimal Twitter theme" />
               <h3>Minimal</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/minimal.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal.webp" alt="Minimal Twitter theme" />
               <h3>Minimal Black</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/minimal-red.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal-red.webp" alt="Minimal Twitter theme" />
               <h3>Minimal Red</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/minimal-pink.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal-pink.webp" alt="Minimal Twitter theme" />
               <h3>Minimal Pink</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/minimal-purple.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal-purple.webp" alt="Minimal Twitter theme" />
               <h3>Minimal Purple</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="minimal">
-              <img src="/media/img/minimal-green.png" alt="Minimal Twitter theme" />
+              <img src="/media/img/minimal-green.webp" alt="Minimal Twitter theme" />
               <h3>Minimal Green</h3>
               <a href="/" className="btn">
                 Get it
@@ -168,35 +168,35 @@ const Themes = ({ props }) => {
             </div>
 
             <div className="col-md-6 col-lg-4 theme" data-category="neon">
-              <img src="/media/img/neon-default.png" alt="neon Twitter theme" />
+              <img src="/media/img/neon-default.webp" alt="neon Twitter theme" />
               <h3>Neon</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="neon">
-              <img src="/media/img/neon-red.png" alt="neon Twitter theme" />
+              <img src="/media/img/neon-red.webp" alt="neon Twitter theme" />
               <h3>Neon Red</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="neon">
-              <img src="/media/img/neon-pink.png" alt="neon Twitter theme" />
+              <img src="/media/img/neon-pink.webp" alt="neon Twitter theme" />
               <h3>Neon Pink</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="neon">
-              <img src="/media/img/neon-purple.png" alt="neon Twitter theme" />
+              <img src="/media/img/neon-purple.webp" alt="neon Twitter theme" />
               <h3>Neon Purple</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="neon">
-              <img src="/media/img/neon-green.png" alt="neon Twitter theme" />
+              <img src="/media/img/neon-green.webp" alt="neon Twitter theme" />
               <h3>Neon Green</h3>
               <a href="/" className="btn">
                 Get it
@@ -204,35 +204,35 @@ const Themes = ({ props }) => {
             </div>
 
             <div className="col-md-6 col-lg-4 theme" data-category="flat">
-              <img src="/media/img/flat-default.png" alt="flat Twitter theme" />
+              <img src="/media/img/flat-default.webp" alt="flat Twitter theme" />
               <h3>Flat</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="flat">
-              <img src="/media/img/flat-red.png" alt="flat Twitter theme" />
+              <img src="/media/img/flat-red.webp" alt="flat Twitter theme" />
               <h3>Flat Red</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="flat">
-              <img src="/media/img/flat-pink.png" alt="flat Twitter theme" />
+              <img src="/media/img/flat-pink.webp" alt="flat Twitter theme" />
               <h3>Flat Pink</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="flat">
-              <img src="/media/img/flat-purple.png" alt="flat Twitter theme" />
+              <img src="/media/img/flat-purple.webp" alt="flat Twitter theme" />
               <h3>Flat Purple</h3>
               <a href="/" className="btn">
                 Get it
               </a>
             </div>
             <div className="col-md-6 col-lg-4 theme" data-category="flat">
-              <img src="/media/img/flat-green.png" alt="flat Twitter theme" />
+              <img src="/media/img/flat-green.webp" alt="flat Twitter theme" />
               <h3>Flat Green</h3>
               <a href="/" className="btn">
                 Get it
