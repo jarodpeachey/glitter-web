@@ -5,6 +5,7 @@ import "../styles/partials/pages/_home.scss";
 import { Row, Column } from "@react-tiny-grid/core";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 
 const Home = ({ props }) => {
   return (
@@ -91,147 +92,132 @@ const Home = ({ props }) => {
           </div>
         </div>
       </section>
-      <section className="themes">
-        <div className="container">
-          <h2 className="section-heading">1,000s of possibilities</h2>
-          <p className="section-description">Choose from 25+ plus Glitter themes, or create your very own.</p>
-          <Carousel
-            slides={[
-              {
-                name: "Light",
-                image: "/media/img/light-default.png",
-              },
-              {
-                name: "Dark Purple",
-                image: "/media/img/dark-purple.png",
-              },
-              {
-                name: "Minimal",
-                image: "/media/img/minimal-default.png",
-              },
-              {
-                name: "Neon Red",
-                image: "/media/img/neon-red.png",
-              },
-              {
-                name: "Flat",
-                image: "/media/img/flat-default.png",
-              },
-              {
-                name: "Dark Red",
-                image: "/media/img/dark-red.png",
-              },
-              {
-                name: "Light Pink",
-                image: "/media/img/light-pink.png",
-              },
-              {
-                name: "Neon Green",
-                image: "/media/img/neon-green.png",
-              },
-              {
-                name: "Dark White",
-                image: "/media/img/dark-white.png",
-              },
-              {
-                name: "Light Purple",
-                image: "/media/img/light-purple.png",
-              },
-              {
-                name: "Minimal Red",
-                image: "/media/img/minimal-red.png",
-              },
-              {
-                name: "Dark Green",
-                image: "/media/img/dark-green.png",
-              },
-              {
-                name: "Flat Pink",
-                image: "/media/img/flat-pink.png",
-              },
-            ]}
-          />
-        </div>
-        {/* <a href="/themes" className="btn">View all themes</a> */}
-      </section>
+      <main>
+        <section className="themes">
+          <div className="container">
+            <h2 className="section-heading" id="themes__title">1,000s of possibilities</h2>
+            <p className="section-description">Choose from 25+ plus Glitter themes, or create your very own.</p>
+            <Carousel
+              slides={[
+                {
+                  name: "Light",
+                  image: "/media/img/light-default.png",
+                },
+                {
+                  name: "Dark Purple",
+                  image: "/media/img/dark-purple.png",
+                },
+                {
+                  name: "Minimal",
+                  image: "/media/img/minimal-default.png",
+                },
+                {
+                  name: "Neon Red",
+                  image: "/media/img/neon-red.png",
+                },
+                {
+                  name: "Flat",
+                  image: "/media/img/flat-default.png",
+                },
+                {
+                  name: "Dark Red",
+                  image: "/media/img/dark-red.png",
+                },
+                {
+                  name: "Light Pink",
+                  image: "/media/img/light-pink.png",
+                },
+                {
+                  name: "Neon Green",
+                  image: "/media/img/neon-green.png",
+                },
+                {
+                  name: "Dark White",
+                  image: "/media/img/dark-white.png",
+                },
+                {
+                  name: "Light Purple",
+                  image: "/media/img/light-purple.png",
+                },
+                {
+                  name: "Minimal Red",
+                  image: "/media/img/minimal-red.png",
+                },
+                {
+                  name: "Dark Green",
+                  image: "/media/img/dark-green.png",
+                },
+                {
+                  name: "Flat Pink",
+                  image: "/media/img/flat-pink.png",
+                },
+              ]}
+            />
+          </div>
+          {/* <a href="/themes" className="btn">View all themes</a> */}
+        </section>
 
-      <section className="features">
-        <div className="container">
-          <h2 className="section-heading">Features</h2>
-          <p className="section-description">Whether you're looking for a one-click theme or advanced customization, Glitter has you covered.</p>
-          <div className="row">
-            <div className="col-sm-6 col-md-4">
-              <div className="feature">
-                <div className="icon one">
-                  <img loading="lazy" src="/media/img/icons/icon--shapes.png" alt="Shapes icon" />
+        <section className="features">
+          <div className="container">
+            <h2 className="section-heading">Features</h2>
+            <p className="section-description">Whether you're looking for a one-click theme or advanced customization, Glitter has you covered.</p>
+            <div className="row">
+              <div className="col-sm-6 col-md-4">
+                <div className="feature">
+                  <div className="icon one">
+                    <img loading="lazy" src="/media/img/icons/icon--shapes.png" alt="Shapes icon" />
+                  </div>
+                  <h3>25+ Themes</h3>
+                  <p>Glitter comes with over 25 ready-made themes, and more are being added all the time. Choose from Light, Neon, Dark and many more.</p>
                 </div>
-                <h3>25+ Themes</h3>
-                <p>Glitter comes with over 25 ready-made themes, and more are being added all the time. Choose from Light, Neon, Dark and many more.</p>
               </div>
-            </div>
-            <div className="col-sm-6 col-md-4">
-              <div className="feature">
-                <div className="icon two">
-                  <img loading="lazy" src="/media/img/icons/icon--tools.png" alt="Tools icon" />
+              <div className="col-sm-6 col-md-4">
+                <div className="feature">
+                  <div className="icon two">
+                    <img loading="lazy" src="/media/img/icons/icon--tools.png" alt="Tools icon" />
+                  </div>
+                  <h3>Advanced Customization</h3>
+                  <p>
+                    Can't quite find a theme you like? Not a problem! Glitter lets you create and edit as many themes as you want, so you can find the perfect
+                    fit.
+                  </p>
                 </div>
-                <h3>Advanced Customization</h3>
-                <p>
-                  Can't quite find a theme you like? Not a problem! Glitter lets you create and edit as many themes as you want, so you can find the perfect
-                  fit.
-                </p>
               </div>
-            </div>
-            <div className="col-sm-6 col-md-4">
-              <div className="feature">
-                <div className="icon three">
-                  <img loading="lazy" src="/media/img/icons/icon--settings.png" alt="Settings icon" />
+              <div className="col-sm-6 col-md-4">
+                <div className="feature">
+                  <div className="icon three">
+                    <img loading="lazy" src="/media/img/icons/icon--settings.png" alt="Settings icon" />
+                  </div>
+                  <h3>Easy to Use</h3>
+                  <p>Glitter is built to allow you to easily customize your Twitter theme, without worrying about any issues or complications.</p>
                 </div>
-                <h3>Easy to Use</h3>
-                <p>Glitter is built to allow you to easily customize your Twitter theme, without worrying about any issues or complications.</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="faqs">
-        <div className="container">
-          <h2 className="section-heading">FAQs</h2>
-          <Collapse
-            title="How do I use Glitter?"
-            content="To use Glitter, just add the Chrome extension to your browser, and it will automatically start working. To change the theme, click on the Glitter icon in your toolbar and select your theme."
-            id="collapse-1"
-          />
-          <Collapse title="How many themes can I save?" content="You can create and save as many themes as you want." id="collapse-2" />
-          <Collapse
-            title="Can I edit/delete a theme I don't like?"
-            content="Absolutely! Glitter lets you edit every theme, including the presets, and even lets you delete your custom themes if needed."
-            id="collapse-3"
-          />
-          <Collapse
-            title="I have another question"
-            content="If you've got another question, contact me at <a href='mailto:jarodpeachey@gmail.com'>jarodpeachey@gmail.com</a>, or on Twitter <a href='https://twitter.com/jarodpeachey'>@jarodpeachey</a>"
-            id="collapse-4"
-          />
-        </div>
-      </section>
-      <section className="footer">
-        <div className="container">
-          <div className="flex">
-            <img src="/media/img/logos/glitter-diamond.png" alt="Glitter logo" />
-            <div className="flex">
-              <div className="menu">
-                <h2>Glitter</h2>
-                <p>Make Twitter yours</p>
-              </div>
-              <div className="menu">
-                <h3>Contact</h3>
-                <a href="mailto:jarodpeachey@gmail.com">Email</a>
-                <a href="https://twitter.com/jarodpeachey">Twitter</a>
-              </div>
-            </div>
+        </section>
+        <section className="faqs">
+          <div className="container">
+            <h2 className="section-heading">FAQs</h2>
+            <Collapse
+              title="How do I use Glitter?"
+              content="To use Glitter, just add the Chrome extension to your browser, and it will automatically start working. To change the theme, click on the Glitter icon in your toolbar and select your theme."
+              id="collapse-1"
+            />
+            <Collapse title="How many themes can I save?" content="You can create and save as many themes as you want." id="collapse-2" />
+            <Collapse
+              title="Can I edit/delete a theme I don't like?"
+              content="Absolutely! Glitter lets you edit every theme, including the presets, and even lets you delete your custom themes if needed."
+              id="collapse-3"
+            />
+            <Collapse
+              title="I have another question"
+              content="If you've got another question, contact me at <a href='mailto:jarodpeachey@gmail.com'>jarodpeachey@gmail.com</a>, or on Twitter <a href='https://twitter.com/jarodpeachey'>@jarodpeachey</a>"
+              id="collapse-4"
+            />
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 };
