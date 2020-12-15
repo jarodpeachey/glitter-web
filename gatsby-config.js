@@ -23,22 +23,10 @@ module.exports = {
         printRejected: true,
         develop: false,
         tailwind: false,
-        whitelist: [
-          'scroll',
-          'open',
-          'arrow',
-          'themes',
-          'arrows',
-          'outer',
-          'edge',
-        ],
+        whitelist: ["scroll", "open", "arrow", "themes", "arrows", "outer", "edge"],
       },
     },
     "gatsby-plugin-split-css",
-    {
-      resolve: "gatsby-plugin-no-javascript",
-      options: {},
-    },
     {
       resolve: "gatsby-plugin-no-javascript-utils",
       options: {
@@ -49,6 +37,12 @@ module.exports = {
         removeGatsbyAnnouncer: true,
         removeFocusWrapper: false,
         removePreloadLinks: false,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-no-javascript",
+      options: {
+        excludeFiles: "request",
       },
     },
   ],
