@@ -27,7 +27,7 @@ const Home = ({ props }) => {
                 Glitter is a Chrome extension with over 25 customizable Twitter themes to add some pop to your Twitter experience.
               </p>
               <p className="section-description">Each theme is completely customizable, from the colors of the buttons, to the inputs, backgrounds and more.</p>
-              <a href="/" className="btn">
+              <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" className="btn">
                 Get it now
               </a>
               <a href="/themes" className="btn outlined">
@@ -93,9 +93,22 @@ const Home = ({ props }) => {
         </div>
       </section>
       <main>
+        <section className="video">
+          <div className="container">
+            <h2 className="section-heading">How It Works</h2>
+            <iframe
+              src="https://www.youtube.com/embed/0voV49sNR28"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
         <section className="themes">
           <div className="container">
-            <h2 className="section-heading" id="themes__title">1,000s of possibilities</h2>
+            <h2 className="section-heading" id="themes__title">
+              1,000s of possibilities
+            </h2>
             <p className="section-description">Choose from 25+ plus Glitter themes, or create your very own.</p>
             <Carousel
               slides={[

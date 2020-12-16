@@ -119,6 +119,32 @@
     }
   }
 
+  .themes {
+    background:linear-gradient(#f7f7f7, #ffffff);
+  }
+
+  .video {
+    text-align: center;
+
+    h2 {
+      margin: 0 auto;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    iframe {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      height: 300px;
+      max-width: 700px;
+
+      @include media-breakpoint-up(md) {
+        height: 400px;
+      }
+    }
+  }
+
   .features {
     h2.section-heading,
     p.section-description {
