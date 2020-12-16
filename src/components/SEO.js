@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql, withPrefix } from "gatsby";
 import "../styles/_layout.scss";
 
-function SEO({ description, title, bodyClass, image }) {
+function SEO({ description, title, bodyClass }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -33,7 +33,7 @@ function SEO({ description, title, bodyClass, image }) {
       <meta name="og:image" content={`https://get-glitter.netlify.app${image}?test=true`} />
       <meta name="twitter:image" content={`https://get-glitter.netlify.app${image}?test=true`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={author} />
+      <meta name="twitter:creator" content={site.siteMetadata.author} />
       <meta name="twitter:title" content={title || defaultTitle} />
       <meta name="twitter:description" content={description || defaultDescription} />
 
