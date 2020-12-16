@@ -23,6 +23,7 @@ function SEO({ description, title, bodyClass }) {
   const defaultTitle = site.siteMetadata.title;
   const image = "/media/img/seo.png?test=true";
 
+
   return (
     <Helmet bodyAttributes={{ class: bodyClass }} title={title || defaultTitle}>
       <meta name="description" content={description || defaultDescription} />

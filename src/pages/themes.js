@@ -43,7 +43,7 @@ const Themes = ({ props }) => {
             <button className="filter__button" id="flat">
               Flat
             </button>
-          </div>
+          </div> 
           <div className="row" id="themes__wrapper">
             <div className="col-md-6 col-lg-4 theme" data-category="light">
               <img src="/media/img/light-default.webp" alt="Light Twitter theme" />
