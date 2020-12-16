@@ -7,11 +7,11 @@ const Carousel = props => {
     <>
       <div className="carousel__buttons">
         <button aria-label="Previous Slide" className="carousel__control--prev carousel__control">
-          {"<"}
+          <img src="/media/img/icons/icon--chevron-left.svg" alt=""/>
         </button>
         <div className="carousel__indicator">Dark</div>
         <button aria-label="Next Slide" className="carousel__control--next carousel__control">
-          {">"}
+          <img src="/media/img/icons/icon--chevron-right.svg" alt=""/>
         </button>
       </div>
       <div className="carousel">

@@ -19,13 +19,11 @@
   width: fit-content;
   display: inline-block;
   margin-right: 1rem;
-  font-family: "Rubik", "Courier New";
+  font-family: "Mont", "Courier New";
   font-weight: 600;
   letter-spacing: 1px;
   transition: 0.2s;
-
-  background-image: linear-gradient(to bottom right, $color--purple-dark, $color--pink 30%, $color--orange);
-  background-image: linear-gradient(to bottom right, $color--purple, #{$color--pink} 40%, #{$color--orange});
+  background-image: linear-gradient(to bottom right, $color--pink, $color--orange);
 
   background-repeat: repeat-x;
   background-repeat: repeat-y;
@@ -39,7 +37,7 @@
 
   &.outlined {
     padding: 16px 24px 13px;
-    background-image: linear-gradient(to bottom right, $color--purple, #{$color--pink} 40%, #{$color--orange});
+    background-image: linear-gradient(to bottom right, $color--pink, $color--orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     $border: 2px;
@@ -59,7 +57,7 @@
       z-index: -1;
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
-      background-image: linear-gradient(to bottom right, $color--purple, #{$color--pink} 40%, #{$color--orange});
+      background-image: linear-gradient(to bottom right, $color--pink, $color--orange);
       background-repeat: repeat-x;
       background-repeat: repeat-y;
       background-size: calc(100% + 200px) 90px;

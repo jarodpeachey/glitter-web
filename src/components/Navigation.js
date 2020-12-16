@@ -9,7 +9,7 @@ const Navigation = class extends React.Component {
         <div className="container">
           <div className="logo" id="logo">
             <a href="/">
-              <img src="/media/img/logos/glitter-diamond.png" alt="Gatsby Starter Plus" />
+              <img src="/media/img/logos/logo--glitter-horizontal.svg" alt="Gatsby Starter Plus" />
             </a>
           </div>
           <div className="menu">

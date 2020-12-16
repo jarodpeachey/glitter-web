@@ -2,7 +2,7 @@
 @use "breakpoints" as *;
 
 footer.footer {
-  background: #444444;
+  background: $color--gray-four;
   padding: 1.2rem 0;
 
   p {

@@ -6,8 +6,8 @@
 nav {
   top: 0;
   width: 100%;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   z-index: 1000;
   position: fixed;
   // height: 78px;
@@ -16,8 +16,8 @@ nav {
 
   &.scroll {
     box-shadow: $shadow--one;
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
   }
 
   .container {
@@ -28,7 +28,7 @@ nav {
 
     .logo {
       img {
-        width: 60px;
+        height: 30px;
       }
     }
   }

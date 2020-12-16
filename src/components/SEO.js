@@ -30,7 +30,7 @@ function SEO({ description, title, bodyClass }) {
       <meta name="og:title" content={title || defaultTitle} />
       <meta name="og:description" content={description || defaultDescription} />
       <meta name="og:type" content="website" />
-      <link rel="icon" type="image/svg+xml" href="/media/img/favicon.png"></link>
+      <link rel="icon" type="image/svg+xml" href="/media/img/logos/logo--glitter.svg"></link>
       <meta name="og:image" content={`https://get-glitter.netlify.app${image}?test=true`} />
       <meta name="twitter:image" content={`https://get-glitter.netlify.app${image}?test=true`} />
       <meta name="twitter:card" content="summary_large_image" />

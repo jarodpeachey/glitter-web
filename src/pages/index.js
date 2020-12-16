@@ -218,7 +218,7 @@ const Home = ({ props }) => {
             />
             <Collapse title="How many themes can I save?" content="You can create and save as many themes as you want." id="collapse-2" />
             <Collapse
-              title="Can I edit/delete a theme I don't like?"
+              title="Can I edit or delete a theme I don't like?"
               content="Absolutely! Glitter lets you edit every theme, including the presets, and even lets you delete your custom themes if needed."
               id="collapse-3"
             />
