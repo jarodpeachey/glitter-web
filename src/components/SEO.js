@@ -29,21 +29,13 @@ function SEO({ description, title, bodyClass, image }) {
       <meta name="og:title" content={title || defaultTitle} />
       <meta name="og:description" content={description || defaultDescription} />
       <meta name="og:type" content="website" />
-      <meta
-        name="og:image" 
-        content={`https://get-glitter.netlify.app${image}?test=true`}
-      />
-      <meta
-        name="twitter:image"
-        content={`https://get-glitter.netlify.app${image}?test=true`}
-      />
+      <link rel="icon" type="image/svg+xml" href="/media/img/favicon.png"></link>
+      <meta name="og:image" content={`https://get-glitter.netlify.app${image}?test=true`} />
+      <meta name="twitter:image" content={`https://get-glitter.netlify.app${image}?test=true`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={author} />
       <meta name="twitter:title" content={title || defaultTitle} />
-      <meta
-        name="twitter:description"
-        content={description || defaultDescription}
-      />
+      <meta name="twitter:description" content={description || defaultDescription} />
 
       <script src={withPrefix("js/main.js")} type="text/javascript" defer="true" />
     </Helmet>
