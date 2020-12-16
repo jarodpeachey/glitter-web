@@ -27,7 +27,7 @@ const Home = ({ props }) => {
                 Glitter is a Chrome extension with over 25 customizable Twitter themes to add some pop to your Twitter experience.
               </p>
               <p className="section-description">Each theme is completely customizable, from the colors of the buttons, to the inputs, backgrounds and more.</p>
-              <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" className="btn">
+              <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" rel="noopener" target="_blank" className="btn">
                 Get it now
               </a>
               <a href="/themes" className="btn outlined">
@@ -224,7 +224,7 @@ const Home = ({ props }) => {
             />
             <Collapse
               title="I have another question"
-              content="If you've got another question, contact me at <a href='mailto:jarodpeachey@gmail.com'>jarodpeachey@gmail.com</a>, or on Twitter <a href='https://twitter.com/jarodpeachey'>@jarodpeachey</a>"
+              content="If you've got another question, contact me at <a href='mailto:jarodpeachey@gmail.com'>jarodpeachey@gmail.com</a>, or on Twitter <a target='_blank' rel='noopener' href='https://twitter.com/jarodpeachey'>@jarodpeachey</a>"
               id="collapse-4"
             />
           </div>
