@@ -21,7 +21,7 @@ function SEO({ description, title, bodyClass }) {
 
   const defaultDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata.title;
-  const image = "/media/img/seo.png?test=true";
+  const image = "/media/img/seo.jpg?test=true";
 
 
   return (
