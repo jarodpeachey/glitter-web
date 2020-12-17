@@ -24,9 +24,12 @@ const Home = ({ props }) => {
                 <span>Customize Twitter</span> With One Click
               </h1>
               <p className="section-description">
-                Glitter is a Chrome extension with over 25 customizable Twitter themes to add some pop to your Twitter experience.
+                Twitter can feel a little cluttered sometimes. With Glitter, you can remove the clutter and and some pop with over 25 customizable themes and
+                presets.
               </p>
-              <p className="section-description">Each theme is completely customizable, from the colors of the buttons, to the inputs, backgrounds and more.</p>
+              <p className="section-description">
+                Twitter just got a whole lot more stylish.
+              </p>
               <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" rel="noopener" target="_blank" className="btn">
                 Get it now
               </a>
@@ -93,17 +96,18 @@ const Home = ({ props }) => {
         </div>
       </section>
       <main>
-        <section className="video">
+        {/* <section className="video">
           <div className="container">
             <h2 className="section-heading">How It Works</h2>
-            <iframe
-              src="https://www.youtube.com/embed/0voV49sNR28"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <p className="section-description">
+
+            </p>
+            <div className="row">
+              <div className="col-md-5"></div>
+              <div className="col-md-6 offset-md-1"><h3>Pick a theme</h3><p>Choose from over 25 themes to start out with, including Dark, Neon, and Minimal</p></div>
+            </div>
           </div>
-        </section>
+        </section> */}
         <section className="themes">
           <div className="container">
             <h2 className="section-heading" id="themes__title">
