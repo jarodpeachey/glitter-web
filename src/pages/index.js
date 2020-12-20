@@ -30,7 +30,7 @@ const Home = ({ props }) => {
               <p className="section-description">
                 Twitter just got a whole lot more stylish.
               </p>
-              <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" rel="noopener" target="_blank" className="btn">
+              <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" rel="noopener" target="_blank" rel="noopener" className="btn">
                 Get it now
               </a>
               <a href="/themes" className="btn outlined">

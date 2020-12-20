@@ -13,7 +13,7 @@ const Navigation = class extends React.Component {
             </a>
           </div>
           <div className="menu">
-            <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" rel="noopener" target="_blank" className="btn">
+            <a href="https://chrome.google.com/webstore/detail/glitter/eemfjchmfdebpajeaaopbjgflhljhbnd" rel="noopener" target="_blank" rel="noopener" className="btn">
               Get it
             </a>
           </div>
