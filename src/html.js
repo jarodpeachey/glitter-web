@@ -1,6 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { withPrefix } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { withPrefix } from "gatsby";
 
 export default function HTML(props) {
   return (
@@ -9,6 +9,7 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="propeller" content="93f0fe4fc193d8d0b4f92d62081f1958" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -19,7 +20,7 @@ export default function HTML(props) {
         {/* <script src={withPrefix("js/main.js")} type="text/javascript" /> */}
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -29,4 +30,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};
