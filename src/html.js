@@ -17,6 +17,14 @@ export default function HTML(props) {
         {props.postBodyComponents}
 
         {/* <script src={withPrefix("js/main.js")} type="text/javascript" /> */}
+
+        <script async src="https://cdn.panelbear.com/analytics.js?site=5yG7m6P4X6C"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'window.panelbear=window.panelbear||function(){window.panelbearQ=window.panelbearQ||[],panelbearQ.push(arguments)},panelbear("config",{site: "5yG7m6P4X6C"});',
+          }}
+        />
       </body>
     </html>
   );
